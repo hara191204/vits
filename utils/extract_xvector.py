@@ -11,11 +11,8 @@ class ExtractXvector:
     SpeechBrain提供のVoxCelebで学習されたECAPA-TDNNから抽出されるx-vector.
     192次元.
 
-    Attributes:
-        属性の名前 (属性の型): 属性の説明
-        属性の名前 (:obj:`属性の型`): 属性の説明.
-
     """
+
     def __init__(self):
         self._device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
